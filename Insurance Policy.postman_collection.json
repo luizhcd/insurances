@@ -9,6 +9,16 @@
 		{
 			"name": "all poclicies",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJ1c2VyMSIsImlhdCI6MTcwNzc2MTgzNywiZXhwIjoxMDAxNzA3NzYxODM3fQ.clmkbIR3h8zbRzFmAymNYprmE_mCLJydogo3yaq4OqE",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
@@ -30,10 +40,27 @@
 		{
 			"name": "policies:id",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJ1c2VyMSIsImlhdCI6MTcwNzc2MTgzNywiZXhwIjoxMDAxNzA3NzYxODM3fQ.clmkbIR3h8zbRzFmAymNYprmE_mCLJydogo3yaq4OqE",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "sedfgsedfg",
+						"type": "text",
+						"disabled": true
+					}
+				],
 				"url": {
-					"raw": "http://localhost:3000/api/v1/policies",
+					"raw": "http://localhost:3000/api/v1/policies/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -42,7 +69,8 @@
 					"path": [
 						"api",
 						"v1",
-						"policies"
+						"policies",
+						"1"
 					]
 				}
 			},
@@ -51,6 +79,16 @@
 		{
 			"name": "create policy",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJ1c2VyMSIsImlhdCI6MTcwNzc2MTgzNywiZXhwIjoxMDAxNzA3NzYxODM3fQ.clmkbIR3h8zbRzFmAymNYprmE_mCLJydogo3yaq4OqE",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
@@ -81,6 +119,16 @@
 		{
 			"name": "DELETE policy",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJ1c2VyMSIsImlhdCI6MTcwNzc2MTgzNywiZXhwIjoxMDAxNzA3NzYxODM3fQ.clmkbIR3h8zbRzFmAymNYprmE_mCLJydogo3yaq4OqE",
+							"type": "string"
+						}
+					]
+				},
 				"method": "DELETE",
 				"header": [],
 				"body": {
